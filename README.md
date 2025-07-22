@@ -31,6 +31,12 @@ Enable organizations to:
 
 ## Architecture
 
+
+
+<img width="3520" height="1570" alt="Azure end to end" src="https://github.com/user-attachments/assets/23835b74-4656-4c38-8c24-3887e47d0a96" />
+
+
+
 ---
 
 ## ⚙️ Approach
@@ -38,18 +44,18 @@ Enable organizations to:
 1. **Ingestion**  
    - Configure Self‑Hosted Integration Runtime in a VM to simulate on-prem data source and pull tables from SQL Server.  
    - Parameterize pipelines for dynamic, scale‑out ingestion.  
-   - 📺 [Watch Setup & Ingestion in Azure Data Factory](https://youtu.be/GvwC8Uj5L2g)
+   - ▶️ [Watch Setup & Ingestion in Azure Data Factory](https://youtu.be/GvwC8Uj5L2g)
 
 2. **Medallion Architecture (Bronze–Silver–Gold) Layers**  
    - **Bronze:** Raw data landing in Parquet format in ADLS.  
    - **Silver:** Cleaned & conformed Delta tables via Databricks notebooks.  
    - **Gold:** Aggregated, analytics‑ready Delta tables exposed via Synapse views.  
-   - 📺 [Watch Medallion Architecture and Transformation Flow](https://youtu.be/vDO5o7TdLqE)
+   - ▶️ [Watch Medallion Architecture and Transformation Flow](https://youtu.be/vDO5o7TdLqE)
 
 3. **Processing with Databricks (PySpark)**  
    - Use notebooks to handle schema evolution, filtering, joins, and aggregations.  
    - Store curated data in Delta Lake format and register Delta tables.  
-   - 📺 [Watch Databricks Processing & Transformation](https://youtu.be/wR5JvF6uj1c)
+   - ▶️ [Watch Databricks Processing & Transformation](https://youtu.be/wR5JvF6uj1c)
 
 4. **Automation & Orchestration**  
    - Trigger pipelines on schedule using ADF.  
@@ -59,7 +65,12 @@ Enable organizations to:
    - Use Azure Synapse Serverless SQL Pools to create views on Gold Delta tables in ADLS.  
    - Expose curated data to BI tools.
 
-6. **Security & Governance**  
+6. **Security & Governance**
+   
+
+   <img width="1279" height="633" alt="kv_ss" src="https://github.com/user-attachments/assets/c7413a38-7e21-45f7-b535-fc97e17ddacd" />
+
+
    - Manage credentials and keys securely with Azure Key Vault.  
    - Apply RBAC using Azure Active Directory.
 
