@@ -1,0 +1,13 @@
+-- Active: 1752493254140@@localhost@1433@master
+RESTORE FILELISTONLY  
+FROM DISK = '/var/opt/mssql/data/Adventu    reWorksLT2022.bak';
+
+RESTORE DATABASE AdventureWorksLT2022
+FROM DISK = '/var/opt/mssql/data/AdventureWorksLT2022.bak'
+WITH MOVE 'AdventureWorksLT2022_Data' TO '/var/opt/mssql/data/AdventureWorksLT2022.mdf',
+     MOVE 'AdventureWorksLT2022_Log' TO '/var/opt/mssql/data/AdventureWorksLT2022_log.ldf',
+     REPLACE;
+
+USE AdventureWorksLT2022;
+
+SELECT TOP 10 * FROM SalesLT.Customer;
