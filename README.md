@@ -7,13 +7,6 @@ This solution showcases a fully automated data platform on Microsoft Azure that 
 
 ## 🎯 Business Objective
 
-Enable organizations to:
-Absolutely! Here’s a more detailed and professional version of that “Business Objective” section, tailored for GitHub and aimed at recruiters or technical stakeholders:
-
----
-
-## 🎯 Business Objective (Elaborated)
-
 This project addresses the common challenges organizations face when dealing with fragmented, on-premises SQL Server data systems. The primary goals of the solution are:
 
 * **Modernize Legacy SQL Server Workflows**
